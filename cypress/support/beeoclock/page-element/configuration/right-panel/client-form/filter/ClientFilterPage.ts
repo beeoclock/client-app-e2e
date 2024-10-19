@@ -6,10 +6,11 @@ export class ClientFilterPage {
 
     public typeSearchValue(value: string): ClientFilterPage {
         const getCustomer = CustomerApiInterceptionHelper.getCustomer(value)
-        SearchInput.getElement()
+        SearchInput.getInput()
             .clear()
             .type(value).then(() => {
-            ApiInterceptionHelper.waitForAlias(getCustomer)
+        }).then(() => {
+            SearchInput.getSearchButton().click({force: true});
         })
         return this
     }

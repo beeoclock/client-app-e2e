@@ -25,7 +25,7 @@ export class CommonElementPage {
     }
 
     public static typeMainSearchInput(value: string): CommonElementPage {
-        SearchInput.getElement()
+        SearchInput.getInput()
             .type(value)
         return this;
     }
