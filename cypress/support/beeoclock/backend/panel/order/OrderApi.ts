@@ -126,16 +126,12 @@ export class OrderApi {
     public static deleteAllCurrentOrders(): void {
         OrderApi.getOrderIds().then(orderIds => {
             OrderApi.deleteOrders(orderIds);
-        }).then(() => {
-            CommonElementPage.reloadOnCalendar()
         })
     }
 
     public static deleteAllOrders(): void {
         OrderApi.getAllOrderIds().then(orderIds => {
             OrderApi.deleteOrders(orderIds);
-        }).then(() => {
-            CommonElementPage.reloadOnCalendar()
         })
     }
 
