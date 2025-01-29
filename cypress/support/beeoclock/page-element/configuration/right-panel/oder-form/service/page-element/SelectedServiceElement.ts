@@ -1,7 +1,7 @@
 export class SelectedServiceElement {
     public getComponent(): any {
         return cy.get('whac-a-mole-container')
-            .find('.leading-tight.flex.gap-2').first()
+            .find('.leading-tight.flex.gap-4').first()
             .scrollIntoView().should('be.visible')
     }
 
@@ -16,6 +16,4 @@ export class SelectedServiceElement {
     public getTotalDuration(): any {
         return this.getComponent().find('.text-nowrap.whitespace-nowrap').last()
     }
-
-
 }
