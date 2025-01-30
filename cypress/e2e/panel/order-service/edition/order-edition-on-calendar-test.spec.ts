@@ -9,6 +9,7 @@ import {RightPanelPages} from "support/beeoclock/page-element/configuration/righ
 import {CustomerTypeEnum} from "support/beeoclock/page-element/configuration/right-panel/oder-form/service/enum/CustomerTypeEnum"
 import {CalendarPages} from "support/beeoclock/page-element/configuration/tab/calendar/CalendarPages"
 import {OrderTabPages} from "support/beeoclock/page-element/configuration/tab/order-tab/OrderTabPages"
+import {ServiceNameEnum} from "../../../../support/beeoclock/page-element/common/enum/ServiceNameEnum";
 
 describe('panel order edition on calendar', () => {
     const testCases = [
@@ -82,8 +83,13 @@ describe('panel order edition on calendar', () => {
                     cy.log("ORDERID: " + orderID)
                     CalendarPages.CalendarTablePage
                         .clickOnGivenOrderByItsId(orderID)
+
                     // cy.log('edit specialist')
-                    // OrderTabPages.OrderEditionFormPage
+                    OrderTabPages.OrderEditionFormPage
+                        .clickEditButtonOnClipBoard()
+                    OrderTabPages.OrderEditionFormPage
+                        .clickServiceServiceLink()
+                        .clickSelectGivenService(ServiceNameEnum.HAIR_DYEING)
                     //     .verifyOrderSpecialist(orderID, SpecialistNameEnum.ZALEWSKI_FIRST_NAME)
                     //     .clickSpecialistButton(orderID)
                     //     .clickSelectSpecialist(SpecialistNameEnum.E2E_SINGLE_NAME)

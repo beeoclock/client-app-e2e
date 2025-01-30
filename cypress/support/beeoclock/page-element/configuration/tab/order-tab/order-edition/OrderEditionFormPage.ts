@@ -57,4 +57,21 @@ export class OrderEditionFormPage {
         return this;
     }
 
+    public clickEditButtonOnClipBoard(): OrderEditionFormPage {
+        OrderEditionFormPageElement.EditButton.getElement()
+            .click()
+        return this;
+    }
+
+    public clickServiceServiceLink(): OrderEditionFormPage {
+        OrderEditionFormPageElement.SelectServiceLink.getElement()
+            .dblclick()
+        return this;
+    }
+
+    public clickSelectGivenService(service: string): OrderEditionFormPage {
+        OrderEditionFormPageElement.SelectGivenService.getElement(service)
+            .click();
+        return this;
+    }
 }
