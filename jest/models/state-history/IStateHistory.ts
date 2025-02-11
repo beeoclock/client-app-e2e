@@ -1,4 +1,6 @@
+import { StateHistoryEnum } from "./enum/StateHistoryEnum";
+
 export interface IStateHistory {
-    state: 'active' | 'inactive' | 'blocked';
+    state: StateHistoryEnum
     setAt: string;
 }

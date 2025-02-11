@@ -13,7 +13,7 @@ import {IEmails} from "../../../../support/beeoclock/notifications/interface/IEm
 import {AssertionsHelper} from "support/beeoclock/common/assertion/AssertionsHelper"
 import {IEmailContent} from "support/beeoclock/notifications/interface/IEmailContent"
 import {DateUtils} from "support/beeoclock/backend/Utils/DateUtils"
-import {BackendCommonEnum} from "jest/models/customer/enum/BackendCommonEnum"
+import { BackendCommonEnum } from "../../../../../jest/models/enum/BackendCommonEnum"
 
 describe('panel new customer order service', () => {
     const testCases = [

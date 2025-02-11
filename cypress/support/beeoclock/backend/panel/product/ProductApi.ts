@@ -1,6 +1,6 @@
 import {EntryPointEnum} from "../../../common/Interception/EntryPointEnum";
-import {BackendCommonEnum} from "../../../../../../jest/models/customer/enum/BackendCommonEnum";
-import {HTTPStatusCodeType} from "../../../../../../jest/models/customer/enum/HTTPStatusCodeType";
+import {BackendCommonEnum} from "../../../../../../jest/models/enum/BackendCommonEnum";
+import {HTTPStatusCodeType} from "../../../../../../jest/models/enum/HTTPStatusCodeType";
 
 export class ProductApi {
 

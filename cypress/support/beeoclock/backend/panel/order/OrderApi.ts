@@ -1,5 +1,5 @@
 import {DateUtils} from "../../Utils/DateUtils";
-import {BackendCommonEnum} from "../../../../../../jest/models/customer/enum/BackendCommonEnum";
+import {BackendCommonEnum} from "../../../../../../jest/models/enum/BackendCommonEnum";
 import {EntryPointEnum} from "../../../common/Interception/EntryPointEnum";
 
 export class OrderApi {

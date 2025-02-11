@@ -1,14 +1,15 @@
-import { IStateHistory } from "../../state-history/IStateHistory";
 import {CustomerTypeEnum} from "../enum/CustomerTypeEnum";
+import {StateHistoryEnum} from "../../state-history/enum/StateHistoryEnum";
+import {IStateHistory} from "../../state-history/IStateHistory";
 
 export interface Customer {
-    _version: string;
+    object: 'CustomerDto';
     _id: string;
-    stateHistory: IStateHistory[];
-    state: 'active' | 'inactive' | 'blocked';
+    stateHistory: IStateHistory[]
+    _version: string;
+    state: StateHistoryEnum
     createdAt: string;
     updatedAt: string;
-    object: 'CustomerDto';
     firstName: string;
     lastName: string;
     phone: string;

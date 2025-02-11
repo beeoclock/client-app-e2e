@@ -1,9 +1,9 @@
 import { CustomerTypeEnum } from "../enum/CustomerTypeEnum";
 import { generateCustomer } from "../factory/customer-factory";
 import { Customer } from "../interface/ICustomer";
-import {StateEnum} from "../../state-history/enum/StateEnum";
+import {StateHistoryEnum} from "../../state-history/enum/StateHistoryEnum";
 import axios from "axios";
-import {BackendCommonEnum} from "../enum/BackendCommonEnum";
+import {BackendCommonEnum} from "../../enum/BackendCommonEnum";
 
 export class CustomerService {
 
@@ -11,7 +11,7 @@ export class CustomerService {
         return generateCustomer();
     }
 
-    hasState(customer: Customer, state: StateEnum): boolean {
+    hasState(customer: Customer, state: StateHistoryEnum): boolean {
         return customer.state === state;
     }
 
@@ -19,7 +19,7 @@ export class CustomerService {
         return customer.customerType === customerType;
     }
 
-    hasStateHistory(customer: Customer, state: StateEnum): boolean {
+    hasStateHistory(customer: Customer, state: StateHistoryEnum): boolean {
         return customer.stateHistory.some(stateHistory => stateHistory.state === state);
     }
 

@@ -1,19 +1,19 @@
-import { faker } from '@faker-js/faker';
-import { Customer } from '../interface/ICustomer';
-import { CustomerTypeEnum } from '../enum/CustomerTypeEnum';
+import {faker} from '@faker-js/faker';
+import {Customer} from '../interface/ICustomer';
+import {CustomerTypeEnum} from '../enum/CustomerTypeEnum';
 import {NumericUtils} from "../../../utils/NumericUtils";
-
+import {StateHistoryEnum} from "../../state-history/enum/StateHistoryEnum";
 
 export const generateCustomer = (): Customer => ({
     _version: '1',
     _id: NumericUtils.generateObjectId(),
     stateHistory: [
         {
-            state: 'active',
+            state: StateHistoryEnum.ACTIVE,
             setAt: faker.date.past().toISOString(),
         },
     ],
-    state: 'active',
+    state: StateHistoryEnum.ACTIVE,
     createdAt: faker.date.past().toISOString(),
     updatedAt: faker.date.recent().toISOString(),
     object: 'CustomerDto',

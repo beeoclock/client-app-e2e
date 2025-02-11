@@ -1,4 +1,4 @@
-export enum StateEnum {
+export enum StateHistoryEnum {
     ACTIVE = 'active',
     INACTIVE = 'inactive',
     ARCHIVED = 'archived',
