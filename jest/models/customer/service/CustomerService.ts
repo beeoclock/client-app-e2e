@@ -1,6 +1,6 @@
-import { CustomerTypeEnum } from "../enum/CustomerTypeEnum";
-import { generateCustomer } from "../factory/customer-factory";
-import { Customer } from "../interface/ICustomer";
+import {CustomerTypeEnum} from "../enum/CustomerTypeEnum";
+import {generateCustomer} from "../factory/customer-factory";
+import {Customer} from "../interface/ICustomer";
 import {StateHistoryEnum} from "../../state-history/enum/StateHistoryEnum";
 import axios from "axios";
 import {BackendCommonEnum} from "../../enum/BackendCommonEnum";

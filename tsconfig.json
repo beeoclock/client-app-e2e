@@ -4,13 +4,15 @@
     "esModuleInterop": true,
     "target": "es5",
     "baseUrl": "./cypress",
+    "typeRoots": ["node_modules/@types"],
     "lib": [
       "es5",
       "dom"
     ],
     "types": [
       "cypress",
-      "node"
+      "node",
+      "jest"
     ]
   },
   "include": [
