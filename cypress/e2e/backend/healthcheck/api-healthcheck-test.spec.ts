@@ -1,16 +1,16 @@
 import {BusinessProfileApi} from "../../../support/beeoclock/backend/panel/business-profile/BusinessProfileApi";
-import {HTTPStatusCodeType} from "../../../support/beeoclock/backend/enum/HTTPStatusCodeType";
+import {HTTPStatusCodeType} from "../../../../jest/models/customer/enum/HTTPStatusCodeType";
 import {ServiceEnum} from "../../../support/beeoclock/common/enum/ServiceEnum";
 import {PanelLoginPageElement} from "../../../support/beeoclock/page-element/configuration/login/PanelLoginPageElement";
 import {PanelLoginPage} from "../../../support/beeoclock/page-element/configuration/login/page-element/PanelLoginPage";
 import {ClientPropertiesEnum} from "../../../support/beeoclock/common/enum/ClientPropertiesEnum";
-import {BackendCommonEnum} from "../../../support/beeoclock/backend/enum/BackendCommonEnum";
+import {BackendCommonEnum} from "../../../../jest/models/customer/enum/BackendCommonEnum";
 import {IdentityApi} from "../../../support/beeoclock/backend/identity/IdentityApi";
 import {IdentityData} from "../../../support/beeoclock/backend/identity/enum/IdentityResponse";
 import {AnalyticApi} from "../../../support/beeoclock/backend/panel/analytic/AnalyticApi";
 import {ProductApi} from "../../../support/beeoclock/backend/panel/product/ProductApi";
 import {ProductTagBuilder} from "../../../support/beeoclock/backend/panel/product/tag/ProductTagBuilder";
-import {NumericUtils} from "../../../support/beeoclock/backend/Utils/NumericUtils";
+import {NumericUtils} from "../../../../jest/utils/NumericUtils";
 
 describe("panel api healthcheck", () => {
     let token: string

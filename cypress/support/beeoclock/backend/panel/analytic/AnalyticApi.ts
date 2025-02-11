@@ -1,6 +1,6 @@
 import {DateUtils} from "../../Utils/DateUtils";
-import {BackendCommonEnum} from "../../enum/BackendCommonEnum";
-import {HTTPStatusCodeType} from "../../enum/HTTPStatusCodeType";
+import {BackendCommonEnum} from "../../../../../../jest/models/customer/enum/BackendCommonEnum";
+import {HTTPStatusCodeType} from "../../../../../../jest/models/customer/enum/HTTPStatusCodeType";
 
 export class AnalyticApi {
     private static BASE_URL = "https://api-dev.beeoclock.com/analytic/api/v1/report";

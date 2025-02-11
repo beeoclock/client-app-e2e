@@ -1,6 +1,6 @@
 import { IProductTags } from "./IProductTags";
 import {faker} from "@faker-js/faker";
-import {NumericUtils} from "../../../Utils/NumericUtils";
+import {NumericUtils} from "../../../../../../../jest/utils/NumericUtils";
 
 export class ProductTagBuilder {
     protected productTag: IProductTags = {

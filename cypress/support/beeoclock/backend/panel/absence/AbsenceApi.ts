@@ -1,6 +1,6 @@
 import {DateUtils} from "../../Utils/DateUtils";
 import {EntryPointEnum} from "../../../common/Interception/EntryPointEnum";
-import {BackendCommonEnum} from "../../enum/BackendCommonEnum";
+import {BackendCommonEnum} from "../../../../../../jest/models/customer/enum/BackendCommonEnum";
 
 export class AbsenceApi {
 

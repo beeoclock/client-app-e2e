@@ -1,5 +1,5 @@
-import {HTTPStatusCodeType} from "../enum/HTTPStatusCodeType";
-import {BackendCommonEnum} from "../enum/BackendCommonEnum";
+import {HTTPStatusCodeType} from "../../../../../jest/models/customer/enum/HTTPStatusCodeType";
+import {BackendCommonEnum} from "../../../../../jest/models/customer/enum/BackendCommonEnum";
 
 export class IdentityApi {
 
